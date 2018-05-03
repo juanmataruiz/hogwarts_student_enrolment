@@ -33,4 +33,9 @@ attr_reader :id, :name
       return result
   end
 
+  def self.delete_all
+    sql = "DELETE FROM houses"
+    SqlRunner.run(sql)
+  end
+
 end

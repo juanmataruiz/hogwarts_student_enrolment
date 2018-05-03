@@ -49,6 +49,11 @@ attr_reader :id, :first_name, :last_name, :house_id, :age
       return result
   end
 
+  def self.delete_all
+    sql = "DELETE FROM students"
+    SqlRunner.run(sql)
+  end
+
 
 
 end

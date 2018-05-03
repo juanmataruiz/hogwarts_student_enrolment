@@ -11,5 +11,6 @@ get '/hogwarts-student' do #index
 end
 
 get '/hogwarts-student/new' do #new
+  
   erb( :new )
 end

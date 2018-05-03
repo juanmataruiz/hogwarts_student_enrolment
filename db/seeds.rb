@@ -1,6 +1,9 @@
 require_relative('../models/hogwarts_student')
 require_relative('../models/hogwarts_house')
 
+House.delete_all()
+Student.delete_all()
+
 house1 = House.new({
   "name" => "Gryffindor"
   })
