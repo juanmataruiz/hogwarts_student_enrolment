@@ -6,7 +6,7 @@ require_relative( './models/hogwarts_student')
 
 
 get '/hogwarts-student' do #index
-  @students = HogwartsStudent.all()
+  @students = Student.all()
   erb(:index)
 end
 
